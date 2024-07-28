@@ -1,4 +1,4 @@
-# My React Projects
+# My Mern Stack Projects
 
 This repository contains projects that i created during MERN Stack web development Course. Each project is hosted on Netlify for easy access , Explanation and what i learned from it.
 
