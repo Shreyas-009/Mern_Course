@@ -40,7 +40,7 @@ Task 22 Created Custom Hook to Fetch Data from an api endpoint and returning loa
 
 ### Task 23
 
-**Link:** [Task 22](https://task23-by-shreyas.netlify.app)
+**Link:** [Task 23](https://task23-by-shreyas.netlify.app)
 
 Task 23 Created Small multipage Website using React Hook Form to Hyperlink pages:
 
