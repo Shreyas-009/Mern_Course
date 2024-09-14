@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Laundry Service</title>
+</head>
+
+<body class="scroll-smooth">
+    <main class="h-full w-full bg-white relative">
+        <section class="w-full h-screen flex flex-col">
+            <nav class="flex justify-between px-16 py-2 bg-zinc-50 items-center">
+                <h1 class="font-bold text-xl">LOGO</h1>
+                <ul class="hidden md:hidden lg:flex gap-14 content-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#AvouteUs">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#ContactUs">Contact Us</a></li>
+                </ul>
+                <div class="px-6 py-3 bg-blue-100 rounded-xl text-blue-500 font-bold">
+                    Username
+                </div>
+            </nav>
+
+            <section class="flex flex-1 items-center w-full">
+                <div class="w-1/2 px-16 flex flex-col gap-4">
+                    <h1 class="text-5xl font-bold">Revitalize Your</h1>
+                    <h1 class="text-5xl font-bold">Clothes With Expert</h1>
+                    <h1 class="text-5xl font-bold text-blue-400">Laundry Services!</h1>
+                    <p class="text-zinc-500">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Facilis, explicabo placeat maiores at, vel officia, sunt
+                        temporibus maxime quos cumque delectus sequi blanditiis
+                        veritatis obcaecati aut repellendus voluptatibus? Autem quidem
+                        eligendi tenetur.
+                    </p>
+                    <button class="px-8 py-4 bg-blue-400 rounded-xl text-white w-fit">
+                        Book a service today!
+                    </button>
+                </div>
+                <div class="w-1/2 flex justify-center">
+                    <img class="w-2/5" src="./img.jpg" alt="Laundry Service">
+                </div>
+            </section>
+
+            <section id="AvouteUs" class="bg-blue-400 px-16 flex justify-between items-center">
+                <h1 class="font-semibold text-5xl py-5">Our Achievements</h1>
+                <ul class="flex">
+                    <li class="flex flex-col border-r-2 px-10 border-white border-opacity-40 font-bold">
+                        <h1 class="text-3xl">15+</h1>
+                        <p>Laundry Services</p>
+                    </li>
+                    <li class="flex flex-col border-r-2 px-10 border-white border-opacity-40 font-bold">
+                        <h1 class="text-3xl">240+</h1>
+                        <p>Happy Customers</p>
+                    </li>
+                    <li class="flex flex-col px-10 font-bold">
+                        <h1 class="text-3xl">2+Yrs</h1>
+                        <p>Experience</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="Services" class="flex flex-1 justify-center items-center w-full m-auto bg-zinc-200 h-screen py-8">
+            <div class="services h-full w-4/5 flex gap-2">
+                <div class="right-s w-1/2 bg-white rounded-xl p-4 flex flex-col gap-3">
+                    <div class="head py-2">
+                        <h1 class="text-3xl font-bold text-zinc-600 py-1">Our Services</h1>
+                        <p class="text-zinc-500 text-lg tracking-wide">
+                            Click On The Add To Cart Button To Add The Services To Your Cart
+                        </p>
+                    </div>
+                    <div class="flex-1">
+                        <div id="serviceList"
+                            class="item w-full gap-2 py-4 border-t border-b border-zinc-400 flex-col items-center h-full grid">
+                        </div>
+                    </div>
+                    <p class="text-blue-500 font-semibold py-2">
+                        <i class="ri-information-2-line"></i> Add item to the cart and book now
+                    </p>
+                </div>
+
+                <div class="left-s w-1/2 flex flex-col gap-2">
+                    <div class="left-t bg-white rounded-xl flex flex-col flex-1">
+                        <h1 class="text-center font-bold py-4 text-xl text-zinc-600">Added Items</h1>
+                        <div class="service-list h-52 overflow-y-auto flex-1">
+                            <table class="w-full py-4">
+                                <thead class="bg-zinc-50">
+                                    <tr class="py-1 text-zinc-500 w-full">
+                                        <th class="text-start pl-4">S.No</th>
+                                        <th class="text-start flex-1">Service Name</th>
+                                        <th class="text-start">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cartList"></tbody>
+                            </table>
+                        </div>
+                        <div class="flex px-4 justify-between py-4 border-t border-zinc-200 text-zinc-600">
+                            <h1 class="font-bold">Total Amount</h1>
+                            <h1 id="totalAmount" class="font-bold">₹ 0.0</h1>
+                        </div>
+                    </div>
+                    <div class="left-b flex flex-col gap-3 bg-white rounded-xl p-4">
+                        <h1 class="font-bold text-xl text-zinc-600">Book Now</h1>
+                        <form id="bookingForm" class="flex flex-col gap-3">
+                            <div>
+                                <label class="font-semibold text-zinc-500" for="name">Full Name</label>
+                                <input type="text" name="name" placeholder="John Doe"
+                                    class="border border-zinc-200 rounded-xl p-2 w-full" required>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-1/2">
+                                    <label class="font-semibold text-zinc-500" for="email">Email ID</label>
+                                    <input type="email" name="email" placeholder="mailid@gmail.com"
+                                        class="border border-zinc-200 rounded-xl p-2 w-full" required>
+                                </div>
+                                <div class="w-1/2">
+                                    <label class="font-semibold text-zinc-500" for="phone">Phone Number</label>
+                                    <input type="tel" name="phone" placeholder="0000000000"
+                                        class="border border-zinc-200 rounded-xl p-2 w-full" required>
+                                </div>
+                            </div>
+                            <button class=" bg-blue-500 text-white rounded-xl py-3 cursor-pointer" type="submit">Book
+                                Now</button>
+                        </form>
+                        <p id="submitMessage" class="text-green-500 font-semibold"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen flex flex-col">
+            <section class="w-full flex-1 grid grid-cols-4">
+                <div class="p-12 text-center flex flex-col justify-center items-center">
+                    <div class="w-2/5 flex-1 grid items-center">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQriyVjJ0f878fNJzHTyQeOm_bieQ7hhFeyUsvA-ypseWrNsRrh" alt="">
+                    </div>
+                    <h1 class="text-xl font-bold">Premium Service</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate atque libero eaque!
+                    </p>
+                </div>
+                <div class="p-12 text-center flex flex-col justify-center items-center ">
+                    <div class="w-2/5 flex-1 grid items-center">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQltmPPam5QlBoF5mMhWW20YkFlMbL-FySRTMH-wWBjerEHLaOu" alt="">
+                    </div>
+                    <h1 class="text-xl font-bold">Quick Support</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate atque libero eaque!
+                    </p>
+                </div>
+                <div class="p-12 text-center flex flex-col justify-center items-center">
+                    <div class="w-2/5 flex-1 grid items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz44DUKkjsDPtwJQQUpbg5F-EAwVeKZjMmyQ&s" alt="">
+                    </div>
+                    <h1 class="text-xl font-bold">Hassle Free Delevary</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate atque libero eaque!
+                    </p>
+                </div>
+                <div class="p-12 text-center flex flex-col justify-center items-center">
+                    <div class="w-2/5 flex-1 grid items-center">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv9IZ1fxHRJUpzDN12wiQretFZB6SiCPeNeOwbok7soxEmHjdV" alt="">
+                    </div>
+                    <h1 class="text-xl font-bold">Affordable Prices</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate atque libero eaque!
+                    </p>
+                </div>
+            </section>
+            <section id="ContactUs" class="w-full bg-blue-500 flex px-16 gap-16 py-8 items-center">
+                <div>
+                    <span class="text-white font-bold text-[7vh] p-0">
+                        Subscribe to our <br>
+                        newsletter.
+                    </span>
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                    <div class="flex gap-2">
+                        <input class="p-5 bg-blue-400 w-1/2 text-white outline-none placeholder:text-zinc-50"
+                            type="text" placeholder="Full Name">
+                        <input class="p-5 bg-blue-400 w-1/2 text-white outline-none placeholder:text-zinc-50"
+                            type="email" placeholder="Email">
+                    </div>
+                    <button class="bg-white text-blue-500 font-semibold w-1/2 py-5">Subscribe</button>
+                </div>
+            </section>
+            <footer class="w-full flex-1 grid grid-cols-4 bg-zinc-100">
+                <div class="p-12 flex gap-5 flex-col">
+                    <h1 class="text-4xl font-bold">Logo</h1>
+                    <div>
+                        <h2 class="font-semibold">About</h2>
+                        <p class="text-zinc-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                            quibusdam.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-12">
+                    <h1 class="font-semibold text-xl">Important Links</h1>
+                    <ol class="text-zinc-700">
+                        <li class="hover:text-blue-400 cursor-pointer">About Us</li>
+                        <li class="hover:text-blue-400 cursor-pointer">Contact Us</li>
+                        <li class="hover:text-blue-400 cursor-pointer">Privacy Policy</li>
+                        <li class="hover:text-blue-400 cursor-pointer">Terms of use</li>
+                        <li class="hover:text-blue-400 cursor-pointer">Refund Policy</li>
+                    </ol>
+                </div>
+                <div class="p-12 flex flex-col gap-2">
+                    <h1 class="font-semibold text-xl">Contact</h1>
+                    <div class="text-zinc-700">
+                        <p>mail@gmail.com</p>
+                        <p>+91 32536 98678</p>
+                    </div>
+                </div>
+                <div class="p-12">
+                    <h1 class="font-semibold text-xl">Follow Us</h1>
+                    <ol class="flex gap-4 py-2">
+                        <li><i class="ri-instagram-line text-xl hover:text-orange-500 hover:cursor-pointer"></i></li>
+                        <li><i class="ri-facebook-line text-xl hover:text-blue-500 hover:cursor-pointer"></i></li>
+                        <li><i class="ri-twitter-line text-xl hover:text-sky-500 hover:cursor-pointer"></i></li>
+                        <li><i class="ri-youtube-line text-xl hover:text-red-500 hover:cursor-pointer"></i></li>
+                    </ol>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("lQZ2MR01OuGl7UceO"); 
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
