@@ -49,3 +49,16 @@ Task 23 Created Small multipage Website using React Hook Form to Hyperlink pages
 - Handling Routes and linking pages
 - Creating a simple navigation menu 
 
+### Task 24
+
+**Link:** [Task 24](https://task34-by-shreyas.netlify.app)
+
+Task 24 Created payment functionality to an online shoe store using React Context API:
+
+- **What I Learned:**
+  - How to use React Context API for state management
+  - Managing navigation between shopping and payment pages
+  - Setting up a user interface for handling cart contents and payment processing
+
+
+
