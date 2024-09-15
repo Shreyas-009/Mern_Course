@@ -110,6 +110,11 @@ function sendEmail(name, email, phone, selectedServices, totalAmount) {
         "Booking confirmed! An email has been sent with your order details.";
       document.getElementById("submitMessage").className =
         "text-green-500 font-semibold";
+
+      const servicesSection = document.getElementById("footer");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
     },
     function (error) {
       console.log("Failed to send email:", error);
