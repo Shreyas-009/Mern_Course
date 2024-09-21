@@ -61,4 +61,27 @@ Task 24 Created payment functionality to an online shoe store using React Contex
   - Setting up a user interface for handling cart contents and payment processing
 
 
+# Task 26: Simple Web Server with Node.js
+
+**Link:** [Task 26](http://localhost:3000) (Note: This link will only work when running the server locally)
+
+Created a basic web server using Node.js http module to handle different routes:
+
+**What I Learned:**
+- How to create a simple web server with Node.js
+- Implementing basic routing to serve different HTML pages
+- Handling 404 errors for invalid routes
+
+**Screenshots:**
+1. Home Page ("/home" or "/"):
+   ![Home Page](/Task26/routes%20images/Home.png)
+
+2. About Page ("/about"):
+   ![About Page](/Task26/routes%20images/About.png)
+
+3. Contact Page ("/contact"):
+   ![Contact Page](/Task26/routes%20images/contact.png)
+
+4. 404 Error Page:
+   ![404 Error Page](/Task26/routes%20images/not_found.png)
 
