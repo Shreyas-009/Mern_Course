@@ -94,7 +94,10 @@ function sendEmail(name, email, phone, selectedServices, totalAmount) {
   const servicesList = selectedServices
     .map((service) => `${service.name}: ₹${service.price.toFixed(2)}`)
     .join("\n");
-
+ const servicesSection = document.getElementById("footer");
+ if (servicesSection) {
+   servicesSection.scrollIntoView({ behavior: "smooth" });
+ }
   const templateParams = {
     to_name: name,
     to_email: email,
@@ -110,11 +113,6 @@ function sendEmail(name, email, phone, selectedServices, totalAmount) {
         "Booking confirmed! An email has been sent with your order details.";
       document.getElementById("submitMessage").className =
         "text-green-500 font-semibold";
-
-      const servicesSection = document.getElementById("footer");
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: "smooth" });
-      }
     },
     function (error) {
       console.log("Failed to send email:", error);
