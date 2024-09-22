@@ -3,7 +3,14 @@ const app = express();
 const fs = require("fs");
 const cors = require("cors");
 const Port = 8080;
-app.use(cors());
+
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Server working");
