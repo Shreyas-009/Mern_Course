@@ -61,7 +61,7 @@ Task 24 Created payment functionality to an online shoe store using React Contex
   - Setting up a user interface for handling cart contents and payment processing
 
 
-# Task 26: Simple Web Server with Node.js
+### Task 26
 
 **Link:** [Task 26](http://localhost:3000) (Note: This link will only work when running the server locally)
 
