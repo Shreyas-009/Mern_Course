@@ -1,0 +1,3 @@
+[ PROBLEM STATEMENT ] : 
+
+Your task is to create an Express.js application that demonstrates the use of Node.js streams for video streaming. Additionally, create a React frontend to interact with this streaming service.
