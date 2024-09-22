@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/text")
+      .get("https://video-stream-backend-six.vercel.app/text")
       .then((response) => {
         setText(response.data);
       })
@@ -18,7 +18,9 @@ const App = () => {
       <div className="p-3 flex flex-col gap-4 w-1/2">
         <button
           onClick={() => setFile("video")}
-          className={"w-full p-3 text-xl font-bold bg-purple-500 hover:bg-purple-600 rounded-md text-white"}
+          className={
+            "w-full p-3 text-xl font-bold bg-purple-500 hover:bg-purple-600 rounded-md text-white"
+          }
         >
           Lightning_effect_with_HTML&CSS
         </button>
@@ -28,21 +30,19 @@ const App = () => {
         >
           Problem_Statement.txt
         </button>
-        <p>
-          <source src="http://localhost:8080/text" />
-        </p>
       </div>
       <div className="w-1/2 flex justify-center bg-zinc-900 rounded-xl p-1">
         {file === "video" ? (
           <video controls className="w-full h-auto">
-            <source src="http://localhost:8080/video" type="video/mp4" />
+            <source
+              src="https://video-stream-backend-six.vercel.app/video"
+              type="video/mp4"
+            />
           </video>
         ) : (
           <div>
             {/* <pre>{text}</pre> */}
-            <p className="text-white text-wrap">
-                {text}
-            </p>
+            <p className="text-white text-wrap">{text}</p>
           </div>
         )}
       </div>
