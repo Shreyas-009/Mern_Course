@@ -61,6 +61,20 @@ Task 24 Created payment functionality to an online shoe store using React Contex
   - Setting up a user interface for handling cart contents and payment processing
 
 
+
+### Task 25
+
+**Link:** [Task 25](https://task25-by-shreyas.netlify.app/)
+
+Task 25 Created an Online Shoe Store using Redux Toolkit for state management:
+
+- **What I Learned:**
+   - How to implement Redux Toolkit in a React application
+   - Managing global state with slices and reducers
+   - Creating a shopping cart with add, remove, and update functionality
+   - Implementing a checkout process with Redux
+
+
 ### Task 26
 
 **Link:** [Task 26](http://localhost:3000) (Note: This link will only work when running the server locally)
