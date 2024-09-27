@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://video-stream-backend-six.vercel.app/text")
+      .get("http://localhost:8080/text")
       .then((response) => {
         setText(response.data);
       })
@@ -34,10 +34,7 @@ const App = () => {
       <div className="w-1/2 flex justify-center bg-zinc-900 rounded-xl p-1">
         {file === "video" ? (
           <video controls className="w-full h-auto">
-            <source
-              src="https://video-stream-backend-six.vercel.app/video"
-              type="video/mp4"
-            />
+            <source src="http://localhost:8080/video" type="video/mp4" />
           </video>
         ) : (
           <div>
