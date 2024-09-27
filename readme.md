@@ -85,3 +85,16 @@ Created a basic web server using Node.js http module to handle different routes:
 4. 404 Error Page:
    ![404 Error Page](/Task26/routes%20images/not_found.png)
 
+
+### Task 29
+
+**Link:**  
+Frontend: [Task 29 Frontend](https://video-stream-frontend-lmzd59dg7.vercel.app)  
+Backend: [Task 29 Backend](https://video-stream-backend-six.vercel.app)
+
+Task 29 demonstrates video streaming using Node.js streams with Express.js and a React frontend.
+
+- **What I Learned:**
+  - Using **Node.js streams** for video streaming.
+  - Serving video files with **Express.js**.
+  - Integrating **React** for streaming and playback.
