@@ -112,3 +112,17 @@ Task 29 demonstrates video streaming using Node.js streams with Express.js and a
   - Using **Node.js streams** for video streaming.
   - Serving video files with **Express.js**.
   - Integrating **React** for streaming and playback.
+
+
+### Task 30
+
+**Link:**  
+Frontend: [Task 30 Frontend](https://cors-form-frontend.vercel.app/)  
+Backend: [Task 30 Backend](https://cors-form-backend.vercel.app/)
+
+Task 30 Created a simple form send data to backend by post method using axios and at backend accept data parsing it and send back to frontend and used cors for srmless interaction between different backend and frontend port  
+
+- **What I Learned:**
+  - How to setup **CORS** Middleware 
+  - Use of **CORS** to send and recive data from different ports.
+  - Use of **body-parser** to parse JSON and UR-encoded data.
