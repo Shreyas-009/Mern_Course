@@ -12,7 +12,7 @@ const App = () => {
     let message = e.target[2].value;
 
     const res = axios
-      .post("http://localhost:8080/submit", {
+      .post("https://cors-form-backend.vercel.app/submit", {
         name,
         email,
         message,
@@ -20,7 +20,7 @@ const App = () => {
       .then((res) => {
         setData(res.data.data);
         setMessage(res.data.message);
-        alert(res.data.message);        
+        alert(res.data.message);
         e.target.reset();
       });
 
