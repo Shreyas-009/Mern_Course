@@ -103,7 +103,7 @@ Created a basic web server using Node.js http module to handle different routes:
 ### Task 29
 
 **Link:**  
-Frontend: [Task 29 Frontend](https://video-stream-frontend-lmzd59dg7.vercel.app)  
+Frontend: [Task 29 Frontend](https://video-stream-frontend-two.vercel.app/)  
 Backend: [Task 29 Backend](https://video-stream-backend-six.vercel.app)
 
 Task 29 demonstrates video streaming using Node.js streams with Express.js and a React frontend.
