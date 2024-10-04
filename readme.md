@@ -126,3 +126,19 @@ Task 30 Created a simple form send data to backend by post method using axios an
   - How to setup **CORS** Middleware 
   - Use of **CORS** to send and recive data from different ports.
   - Use of **body-parser** to parse JSON and UR-encoded data.
+
+
+### Task 31
+
+**Link:**
+Frontend: [Task 31 Frontend](https://authentication-jwt-frontend.vercel.app/)
+Backend: [Task 31 Backend](https://authentication-jwt-backend.vercel.app/)
+
+Task 31 implements a JWT-based authentication system with a React frontend and Express.js backend. It features user registration, login functionality, and protected routes, demonstrating secure token-based authentication in a full-stack application.
+
+- **What I Learned:**
+  - Implementation of **JWT (JSON Web Tokens)** for secure authentication.
+  - Creating protected routes in **Express.js** using middleware.
+  - Managing authentication state in a **React** application.
+  - Secure storage and transmission of tokens between frontend and backend.
+  - Integrating **axios** for API calls with token-based authentication.
